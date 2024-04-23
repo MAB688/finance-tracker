@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Personal Finance Tracker</h1>
+
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Expenses')">Expenses</button>
+        <button class="tablinks" onclick="openTab(event, 'Income')">Income</button>
+    </div>
+
+    <!-- Tab content for Expenses -->
+    <div id="Expenses" class="tabcontent">
+        <h3>Expenses</h3>
+        <form id="expenseForm">
+            <input type="text" id="expenseDescription" placeholder="Description" required>
+            <input type="number" id="expenseAmount" placeholder="Amount" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <table id="expensesTable">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tab content for Income -->
+    <div id="Income" class="tabcontent">
+        <h3>Income</h3>
+        <form id="incomeForm">
+            <input type="text" id="incomeDescription" placeholder="Description" required>
+            <input type="number" id="incomeAmount" placeholder="Amount" required>
+            <button type="submit">Add Income</button>
+        </form>
+        <table id="incomeTable">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="netSpending">Net Spending: $0</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
