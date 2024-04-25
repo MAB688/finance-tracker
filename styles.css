@@ -1,9 +1,23 @@
-/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
+
+.tablinks {
+    font-weight: bold;
+}
+
 
 .tab button {
     background-color: inherit;
@@ -16,12 +30,9 @@
     font-size: 17px;
 }
 
-.tab button:hover {
-    background-color: #ddd;
-}
-
+.tab button:hover,
 .tab button.active {
-    background-color: #ccc;
+    background-color: #ddd;
 }
 
 .tabcontent {
@@ -29,4 +40,97 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    margin-top: 10px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+th.description,
+td.description {
+    width: 90%;
+    text-align: left;
+    background-color: #f1f1f1;
+    font-size: 20px;
+}
+
+th.amount,
+td.amount {
+    width: 10%;
+    text-align: left;
+    background-color: #f1f1f1;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+    flex-grow: 1;
+    margin: 5px;
+    padding: 10px;
+}
+
+input[type="number"] {
+    flex-basis: 10%;
+}
+
+input[type="text"] {
+    flex-basis: 100%;
+}
+
+button[type="submit"] {
+    flex-basis: auto;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(0, 97, 97);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.tabcontent h3 {
+    margin-top: 0;
+    margin-bottom: -10px;
+    font-size: 30px;
+}
+
+#netSpending {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: darkcyan;
+    color: white;
+    border: 1px solid #ccc;
+    float: right;
+    clear: both;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
