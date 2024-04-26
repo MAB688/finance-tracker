@@ -31,7 +31,7 @@ try:
     # Submit the form
     driver.find_element(By.ID, "incomeForm").submit()
 
-    # Pause to allow page to update (use WebDriverWait in production for better stability)
+    # Pause to allow page to update
     time.sleep(2)
 
     # Verify the transaction was added correctly
